@@ -1,0 +1,132 @@
+:root {
+    --color-primario: #483D8B;
+    --color-gris-oscuro: #dddddd;
+    --color-gris-claro: #fbfbfb;
+    --color-secundario: #f0eefb;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+header{
+    background-color: var(--color-primario);
+    color: white;
+    padding: 20px;
+}
+
+header h1{
+    text-align: center;
+}
+
+footer{
+    background-color: var(--color-primario);
+    color: white;
+    padding: 16px;
+    margin-top: 40px;
+}
+
+footer p{
+    text-align: center;
+}
+
+main{
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#titulo-users{
+    color: var(--color-primario);
+    cursor: pointer;
+}
+
+hr{
+    border: none;
+    border-bottom: 2px solid var(--color-gris-oscuro);
+}
+
+.filtros{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.filtros input[type="radio"]{
+    accent-color: var(--color-primario);
+}
+.barra-busqueda input{
+    width: 100%;
+    padding: 8px 14px;
+    border: 1px solid var(--color-gris-oscuro);
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    gap: 12px;
+}
+
+.botones input{
+    padding: 8px 20px;
+    background-color: white;
+    color: var(--color-primario);
+    border: 2px solid var(--color-primario);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.botones button:hover{
+    background-color: var(--color-primario);
+    color: white;
+}
+
+#users-container table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+#users-container th{
+    background-color: var(--color-primario);
+    color: white;
+    padding: 10px 12px;
+    text-align: left;
+}
+
+#users-container td{
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--color-gris-oscuro);
+    vertical-align: middle;
+}
+
+#users-container tr:nth-child(odd){
+    background-color: var(--color-gris-claro);
+}
+
+#users-container tbody tr:hover{
+    background-color: var(--color-secundario);
+}
+
+.username {
+    color: var(--color-primario);
+    font-weight: bold;
+}
+
+.icono-usuario {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+

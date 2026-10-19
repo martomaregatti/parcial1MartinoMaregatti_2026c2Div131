@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+
+    <header>    
+        <h1>Parcial 1 - division 131</h1>
+    </header>
+
+    <main> 
+        <h2 id="titulo-users">Users</h2>
+        <hr>
+
+        <div class ="filtros">
+            <input type= "radio" name="estado" id="active">
+            <label for="active">Active</label>
+            <input type = "radio" name="estado" id="inactive">
+            <label for="inactive">Inactive</label>
+            <input type="radio" name="estado" id="all">
+            <label for="all">All</label>
+        </div>
+
+        <div class="barra-busqueda">
+            <input type="text" id="input-busqueda" placeholder="Search users...">
+        </div>
+
+        <div class="botones">   
+            <button>Add User</button>
+            <button>Export</button>
+        </div>
+
+        <div id="users-container"></div>
+    </main>
+
+    <footer>    
+        <p>Martino Maregatti</p>
+    </footer>
+
+    
+</body>
+</html>
